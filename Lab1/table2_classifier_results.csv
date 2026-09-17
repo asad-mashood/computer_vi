@@ -1,0 +1,8 @@
+Accuracy (%),Precision (%),Recall (%),F1-Score (%),AUC (%),Feature Extractor,Classifier
+66.25,69.93,66.25,63.59,90.06,Deep Features,Logistic Regression
+57.5,58.26,57.5,55.29,73.44,Deep Features,Decision Tree
+71.25,75.99,71.25,68.82,93.2,Deep Features,Random Forest
+67.5,70.36,67.5,64.43,84.74,Deep Features,K-Nearest Neighbors (KNN)
+67.5,70.44,67.5,64.93,87.56,Deep Features,Linear SVM
+70.0,75.93,70.0,68.33,92.83,Deep Features,RBF-SVM
+70.0,76.04,70.0,67.68,89.24,Deep Features,XGBoost
