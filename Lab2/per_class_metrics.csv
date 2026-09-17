@@ -1,0 +1,127 @@
+Model,Filter,Class,Precision,Recall,F1-score,Support
+resnet50,No Filter,akiec,0.786,0.449,0.571,49
+resnet50,No Filter,bcc,0.729,0.827,0.775,75
+resnet50,No Filter,bkl,0.62,0.76,0.683,75
+resnet50,No Filter,df,0.583,0.389,0.467,18
+resnet50,No Filter,mel,0.701,0.72,0.711,75
+resnet50,No Filter,nv,0.753,0.773,0.763,75
+resnet50,No Filter,vasc,0.941,0.762,0.842,21
+resnet50,Average,akiec,0.762,0.653,0.703,49
+resnet50,Average,bcc,0.667,0.827,0.738,75
+resnet50,Average,bkl,0.684,0.72,0.701,75
+resnet50,Average,df,0.846,0.611,0.71,18
+resnet50,Average,mel,0.718,0.747,0.732,75
+resnet50,Average,nv,0.794,0.72,0.755,75
+resnet50,Average,vasc,1.0,0.714,0.833,21
+resnet50,Gaussian,akiec,0.679,0.776,0.724,49
+resnet50,Gaussian,bcc,0.727,0.853,0.785,75
+resnet50,Gaussian,bkl,0.705,0.733,0.719,75
+resnet50,Gaussian,df,0.889,0.444,0.593,18
+resnet50,Gaussian,mel,0.691,0.747,0.718,75
+resnet50,Gaussian,nv,0.833,0.667,0.741,75
+resnet50,Gaussian,vasc,1.0,0.762,0.865,21
+resnet50,Median,akiec,0.661,0.755,0.705,49
+resnet50,Median,bcc,0.725,0.773,0.748,75
+resnet50,Median,bkl,0.613,0.76,0.679,75
+resnet50,Median,df,0.867,0.722,0.788,18
+resnet50,Median,mel,0.846,0.587,0.693,75
+resnet50,Median,nv,0.822,0.8,0.811,75
+resnet50,Median,vasc,0.842,0.762,0.8,21
+resnet50,Sharpening,akiec,0.786,0.449,0.571,49
+resnet50,Sharpening,bcc,0.838,0.893,0.865,75
+resnet50,Sharpening,bkl,0.594,0.76,0.667,75
+resnet50,Sharpening,df,0.778,0.389,0.519,18
+resnet50,Sharpening,mel,0.686,0.64,0.662,75
+resnet50,Sharpening,nv,0.739,0.867,0.798,75
+resnet50,Sharpening,vasc,0.941,0.762,0.842,21
+resnet50,Sobel,akiec,0.36,0.184,0.243,49
+resnet50,Sobel,bcc,0.676,0.613,0.643,75
+resnet50,Sobel,bkl,0.318,0.667,0.431,75
+resnet50,Sobel,df,0.239,0.611,0.344,18
+resnet50,Sobel,mel,0.781,0.333,0.467,75
+resnet50,Sobel,nv,0.7,0.467,0.56,75
+resnet50,Sobel,vasc,0.9,0.429,0.581,21
+vgg16,No Filter,akiec,0.593,0.714,0.648,49
+vgg16,No Filter,bcc,0.738,0.787,0.761,75
+vgg16,No Filter,bkl,0.647,0.733,0.688,75
+vgg16,No Filter,df,0.688,0.611,0.647,18
+vgg16,No Filter,mel,0.672,0.6,0.634,75
+vgg16,No Filter,nv,0.836,0.68,0.75,75
+vgg16,No Filter,vasc,1.0,0.952,0.976,21
+vgg16,Average,akiec,0.929,0.265,0.413,49
+vgg16,Average,bcc,0.696,0.853,0.766,75
+vgg16,Average,bkl,0.618,0.453,0.523,75
+vgg16,Average,df,0.385,0.278,0.323,18
+vgg16,Average,mel,0.528,0.747,0.619,75
+vgg16,Average,nv,0.618,0.733,0.671,75
+vgg16,Average,vasc,0.947,0.857,0.9,21
+vgg16,Gaussian,akiec,0.794,0.551,0.651,49
+vgg16,Gaussian,bcc,0.74,0.76,0.75,75
+vgg16,Gaussian,bkl,0.537,0.773,0.634,75
+vgg16,Gaussian,df,0.667,0.333,0.444,18
+vgg16,Gaussian,mel,0.603,0.587,0.595,75
+vgg16,Gaussian,nv,0.753,0.733,0.743,75
+vgg16,Gaussian,vasc,1.0,0.667,0.8,21
+vgg16,Median,akiec,0.603,0.714,0.654,49
+vgg16,Median,bcc,0.733,0.733,0.733,75
+vgg16,Median,bkl,0.634,0.6,0.616,75
+vgg16,Median,df,0.583,0.389,0.467,18
+vgg16,Median,mel,0.627,0.693,0.658,75
+vgg16,Median,nv,0.77,0.76,0.765,75
+vgg16,Median,vasc,1.0,0.714,0.833,21
+vgg16,Sharpening,akiec,0.738,0.633,0.681,49
+vgg16,Sharpening,bcc,0.776,0.787,0.781,75
+vgg16,Sharpening,bkl,0.552,0.773,0.644,75
+vgg16,Sharpening,df,0.4,0.556,0.465,18
+vgg16,Sharpening,mel,0.806,0.333,0.472,75
+vgg16,Sharpening,nv,0.705,0.827,0.761,75
+vgg16,Sharpening,vasc,0.952,0.952,0.952,21
+vgg16,Sobel,akiec,0.325,0.265,0.292,49
+vgg16,Sobel,bcc,0.603,0.507,0.551,75
+vgg16,Sobel,bkl,0.352,0.507,0.415,75
+vgg16,Sobel,df,0.0,0.0,0.0,18
+vgg16,Sobel,mel,0.438,0.52,0.476,75
+vgg16,Sobel,nv,0.576,0.653,0.613,75
+vgg16,Sobel,vasc,1.0,0.143,0.25,21
+resnet101,No Filter,akiec,0.792,0.388,0.521,49
+resnet101,No Filter,bcc,0.844,0.72,0.777,75
+resnet101,No Filter,bkl,0.553,0.76,0.64,75
+resnet101,No Filter,df,0.769,0.556,0.645,18
+resnet101,No Filter,mel,0.578,0.693,0.63,75
+resnet101,No Filter,nv,0.737,0.747,0.742,75
+resnet101,No Filter,vasc,1.0,0.857,0.923,21
+resnet101,Average,akiec,0.565,0.714,0.631,49
+resnet101,Average,bcc,0.781,0.667,0.719,75
+resnet101,Average,bkl,0.608,0.787,0.686,75
+resnet101,Average,df,0.857,0.667,0.75,18
+resnet101,Average,mel,0.724,0.733,0.728,75
+resnet101,Average,nv,0.927,0.68,0.785,75
+resnet101,Average,vasc,0.9,0.857,0.878,21
+resnet101,Gaussian,akiec,0.765,0.531,0.627,49
+resnet101,Gaussian,bcc,0.812,0.867,0.839,75
+resnet101,Gaussian,bkl,0.7,0.747,0.723,75
+resnet101,Gaussian,df,0.8,0.444,0.571,18
+resnet101,Gaussian,mel,0.632,0.733,0.679,75
+resnet101,Gaussian,nv,0.763,0.773,0.768,75
+resnet101,Gaussian,vasc,0.952,0.952,0.952,21
+resnet101,Median,akiec,0.739,0.694,0.716,49
+resnet101,Median,bcc,0.813,0.813,0.813,75
+resnet101,Median,bkl,0.596,0.787,0.678,75
+resnet101,Median,df,0.917,0.611,0.733,18
+resnet101,Median,mel,0.746,0.627,0.681,75
+resnet101,Median,nv,0.795,0.773,0.784,75
+resnet101,Median,vasc,0.95,0.905,0.927,21
+resnet101,Sharpening,akiec,0.775,0.633,0.697,49
+resnet101,Sharpening,bcc,0.783,0.867,0.823,75
+resnet101,Sharpening,bkl,0.667,0.773,0.716,75
+resnet101,Sharpening,df,0.625,0.556,0.588,18
+resnet101,Sharpening,mel,0.767,0.613,0.681,75
+resnet101,Sharpening,nv,0.747,0.827,0.785,75
+resnet101,Sharpening,vasc,0.947,0.857,0.9,21
+resnet101,Sobel,akiec,0.372,0.327,0.348,49
+resnet101,Sobel,bcc,0.616,0.707,0.658,75
+resnet101,Sobel,bkl,0.379,0.52,0.438,75
+resnet101,Sobel,df,0.294,0.278,0.286,18
+resnet101,Sobel,mel,0.6,0.36,0.45,75
+resnet101,Sobel,nv,0.59,0.653,0.62,75
+resnet101,Sobel,vasc,0.909,0.476,0.625,21
