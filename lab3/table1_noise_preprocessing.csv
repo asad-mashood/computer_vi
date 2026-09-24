@@ -1,0 +1,12 @@
+Edge Detector,Input Image,Noise Type,Preprocessing,Edge quality,Noise sensitivity,Observations
+Sobel magnitude,Original,None,None,Add your visual assessment,0.0% difference proxy,Average across 3 classes: extra 0.0%; missing 0.0%; clean-map agreement F1 1.000
+Sobel magnitude,Noisy,Gaussian,None,Add your visual assessment,79.9% difference proxy,Average across 3 classes: extra 74.8%; missing 1.4%; clean-map agreement F1 0.201
+Sobel magnitude,Noisy,Salt & Pepper,None,Add your visual assessment,58.2% difference proxy,Average across 3 classes: extra 23.7%; missing 0.0%; clean-map agreement F1 0.418
+Sobel magnitude,Noisy,Gaussian,Gaussian filter,Add your visual assessment,73.3% difference proxy,Average across 3 classes: extra 21.6%; missing 5.5%; clean-map agreement F1 0.267
+Sobel magnitude,Noisy,Salt & Pepper,Median filter,Add your visual assessment,64.0% difference proxy,Average across 3 classes: extra 0.2%; missing 9.1%; clean-map agreement F1 0.360
+Prewitt,Original,None,None,Add your visual assessment,0.0% difference proxy,Average across 3 classes: extra 0.0%; missing 0.0%; clean-map agreement F1 1.000
+Laplacian,Original,None,None,Add your visual assessment,0.0% difference proxy,Average across 3 classes: extra 0.0%; missing 0.0%; clean-map agreement F1 1.000
+LoG,Noisy,Gaussian,Gaussian filter,Add your visual assessment,64.4% difference proxy,Average across 3 classes: extra 0.0%; missing 0.1%; clean-map agreement F1 0.356
+Canny,Original,None,Explicit Gaussian blur,Add your visual assessment,33.3% difference proxy,Average across 3 classes: extra 0.0%; missing 0.0%; clean-map agreement F1 0.667
+Canny,Noisy,Gaussian,Gaussian filter + Canny blur,Add your visual assessment,52.8% difference proxy,Average across 3 classes: extra 0.0%; missing 0.0%; clean-map agreement F1 0.472
+Canny,Noisy,Salt & Pepper,Median filter + Canny blur,Add your visual assessment,76.3% difference proxy,Average across 3 classes: extra 0.0%; missing 0.0%; clean-map agreement F1 0.237

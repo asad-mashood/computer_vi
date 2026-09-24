@@ -1,0 +1,5 @@
+Configuration,Low Threshold,High Threshold,Kernel Size,Edge Quality,Number of Detected Edges (mean edge pixels),Observation
+Canny-1,30,100,3×3,Add your visual assessment,854.3,Mean connected components: 10.3 (proxy)
+Canny-2,50,150,3×3,Add your visual assessment,21.0,Mean connected components: 0.7 (proxy)
+Canny-3,100,200,3×3,Add your visual assessment,19.3,Mean connected components: 0.7 (proxy)
+Canny-4,50,150,5×5,Add your visual assessment,23.0,Mean connected components: 0.7 (proxy)
