@@ -1,0 +1,6 @@
+Image,Best Filter,Edge Method,Area (pixels),Perimeter (pixels),Selection
+Image 1 (ISIC_0030653),Gaussian (5×5),Canny 50–100,16784,572.0,automatic proposal
+Image 2 (ISIC_0031062),Gaussian (5×5),Canny 50–100,2989,267.6,automatic proposal
+Image 3 (ISIC_0032129),Gaussian (5×5),Canny 50–100,17159,1271.8,automatic proposal
+Image 4 (ISIC_0032410),Gaussian (5×5),Canny 50–100,99398,2776.7,automatic proposal
+Image 5 (ISIC_0030070),Gaussian (5×5),Canny 50–100,5327,276.7,automatic proposal
