@@ -126,10 +126,11 @@ html, body, [class*="css"] {
 base_script_dir = os.path.dirname(os.path.abspath(__file__))
 candidates = [
     os.path.join(base_script_dir, "data", "landmarks"),
+    os.path.join(base_script_dir, "lab 6", "data", "landmarks"),
+    os.path.join(os.getcwd(), "lab 6", "data", "landmarks"),
+    os.path.join(os.getcwd(), "data", "landmarks"),
+    os.path.join(base_script_dir, "..", "lab 6", "data", "landmarks"),
     os.path.join(base_script_dir, "lab06", "Landmark_Recognition_SIFT", "data", "landmarks"),
-    r"D:\ComputerVision-LABS-Asad\lab06\Landmark_Recognition_SIFT\data\landmarks",
-    r"D:\Comp Vision Lab 6 Asad\data\landmarks",
-    r"D:\Cv lab 6_staging\landmarks"
 ]
 
 DATA_DIR = None
