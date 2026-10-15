@@ -20,16 +20,13 @@ Launch directly in your web browser with zero local installation:
 ### 2. 🐳 Docker Container (One-Command Run)
 ```bash
 # Build and run the containerized studio
-docker build -t landmark-recognition-sift "lab 6"
+docker build -t landmark-recognition-sift .
 docker run -p 8501:8501 landmark-recognition-sift
 # Open http://localhost:8501 in your browser
 ```
 
 ### 3. 💻 Local Python Setup
 ```bash
-# Navigate to the lab 6 directory
-cd "lab 6"
-
 # Install dependencies
 pip install -r requirements.txt
 
@@ -44,57 +41,18 @@ python run_lab06.py
 
 ## 🧠 System Architecture & Engineering Pipeline
 
-The system processes queries through a multi-stage geometric verification pipeline:
+The system processes queries through a **7-stage geometric verification pipeline** — from raw query image ingestion all the way to bounding-polygon localization display:
 
-```
-[Query Image] ──► [Scale-Space Octaves] ──► [DoG Extrema Detection]
-                                                     │
-                                                     ▼
-[Target Classification] ◄── [RANSAC Homography] ◄── [Lowe's Ratio Test (τ = 0.75)]
-```
+![Pipeline Architecture](figures/pipeline_architecture.png)
 
-```
-           +---------------------------------------------+
-           |                Query Image                  |
-           +---------------------------------------------+
-                                  |
-                                  v
-           +---------------------------------------------+
-           |    SIFT Detector & Descriptor Generator     |
-           |   - Scale-space representation (DoG)        |
-           |   - Sub-pixel peak localization             |
-           |   - 128-D gradient orientation histograms   |
-           +---------------------------------------------+
-                                  |
-                                  v
-           +---------------------------------------------+
-           |       k-NN Feature Matching (k = 2)         |
-           |   - Euclidean distance in 128-D space       |
-           |   - Lowe's Ratio Test: d1 / d2 < 0.75       |
-           +---------------------------------------------+
-                                  |
-                                  v
-           +---------------------------------------------+
-           |       RANSAC Homography Estimation          |
-           |   - Projective transformation H (3x3)       |
-           |   - Geometric sanity checks:                |
-           |     * Determinant sign (det(H) > 0)         |
-           |     * Convexity of transformed quadrilateral|
-           |     * Realistic scale/area ratios           |
-           +---------------------------------------------+
-                                  |
-                     +------------+------------+
-                     |                         |
-              Inliers >= 20             Inliers < 20
-                     |                         |
-                     v                         v
-           +-------------------+     +-------------------+
-           |    RECOGNIZED     |     |     REJECTED      |
-           | Landmark Identity |     | Non-Database /    |
-           | Geometric Bounding|     | Distractor Object |
-           | Polygon Rendered  |     +-------------------+
-           +-------------------+
-```
+> **Stage Overview:**
+> 1. **Query Ingestion** — Standardize & pre-process the uploaded image
+> 2. **SIFT Feature Extraction** — DoG scale-space extrema → 128-D descriptors
+> 3. **Brute-Force k-NN Matching** — Euclidean distance matching against all DB views
+> 4. **Candidate Ranking** — Threshold gate + distinct margin scoring
+> 5. **RANSAC Homography** — Projective 8-DOF transformation estimation
+> 6. **Geometric Verification** — Sanity checks: det(H) > 0, convexity, area ratios
+> 7. **Localization Display** — Green bounding polygon rendered on matched landmark
 
 ---
 
@@ -134,33 +92,6 @@ Comprehensive 6-condition test matrix with localized bounding polygons and rejec
 ### 5. Benchmark Telemetry Performance Analytics
 Real-time analytics comparing keypoint yield, inlier counts, matching ratios, and inference speed:
 ![Benchmark Telemetry](figures/task6_benchmark_telemetry.png)
-
----
-
-## 📦 Directory Structure
-
-```
-lab 6/
-├── .streamlit/
-│   └── config.toml               # Streamlit theme & performance flags
-├── data/
-│   └── landmarks/                # Multi-angle reference landmark images
-│       ├── colosseum/            # Colosseum reference views
-│       ├── eiffel_tower/         # Eiffel Tower reference views
-│       ├── great_wall/           # Great Wall of China reference views
-│       ├── statue_of_liberty/    # Statue of Liberty reference views
-│       ├── taj_mahal/            # Taj Mahal reference views
-│       └── unknown_landmark/     # Non-database distractor evaluation images
-├── figures/                      # High-resolution benchmark visual artifacts
-├── results/                      # Raw CSV & JSON benchmark metrics
-├── app.py                        # Interactive Streamlit studio application
-├── Dockerfile                    # Container configuration for 1-command deployment
-├── LAB06_REPORT.md               # Formal scientific laboratory report
-├── Lab06_SIFT_Landmark_Recognition.ipynb  # Interactive Jupyter research notebook
-├── README.md                     # Project documentation
-├── requirements.txt              # Production dependency specifications
-└── run_lab06.py                  # CLI pipeline & experimental benchmark harness
-```
 
 ---
 
