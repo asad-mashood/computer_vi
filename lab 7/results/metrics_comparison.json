@@ -1,0 +1,71 @@
+{
+    "student": "Muhammad Asad Mashood",
+    "dataset": "DermaMNIST",
+    "seed": 99,
+    "n_classes": 3,
+    "class_names": [
+        "Melanocytic Nevus",
+        "Melanoma",
+        "Benign Keratosis"
+    ],
+    "n_total_features": 2304,
+    "n_selected_features": 460,
+    "reduction_pct": 80.03,
+    "best_ga_setting": "Setting 2 (Diverse Population GA: Pop=60, Mut=0.09)",
+    "baseline_metrics": {
+        "accuracy": 92.16,
+        "precision_macro": 92.4,
+        "recall_macro": 92.16,
+        "macro_f1": 92.1,
+        "weighted_f1": 92.12,
+        "balanced_accuracy": 92.16,
+        "specificity_macro": 96.08,
+        "cohen_kappa": 0.8824,
+        "matthews_corrcoef": 0.8832,
+        "latency_ms": 0.21
+    },
+    "proposed_metrics": {
+        "accuracy": 96.08,
+        "precision_macro": 96.3,
+        "recall_macro": 96.08,
+        "macro_f1": 96.05,
+        "weighted_f1": 96.07,
+        "balanced_accuracy": 96.08,
+        "specificity_macro": 98.04,
+        "cohen_kappa": 0.9412,
+        "matthews_corrcoef": 0.9418,
+        "latency_ms": 0.042
+    },
+    "improvements": {
+        "accuracy": 3.92,
+        "precision_macro": 3.9,
+        "recall_macro": 3.92,
+        "macro_f1": 3.95,
+        "weighted_f1": 3.95,
+        "balanced_accuracy": 3.92,
+        "specificity_macro": 1.96,
+        "cohen_kappa": 0.0588,
+        "matthews_corrcoef": 0.0586,
+        "latency_speedup_x": 5.0
+    },
+    "ga_setting1": {
+        "name": "Setting 1 (Fast Compact GA: Pop=25, Mut=0.04)",
+        "pop_size": 25,
+        "mutation_rate": 0.04,
+        "crossover": "Uniform",
+        "selection": "Tournament",
+        "alpha": 0.82,
+        "best_fitness": 0.9315,
+        "final_features": 475
+    },
+    "ga_setting2": {
+        "name": "Setting 2 (Diverse Population GA: Pop=60, Mut=0.09)",
+        "pop_size": 60,
+        "mutation_rate": 0.09,
+        "crossover": "Uniform",
+        "selection": "Roulette",
+        "alpha": 0.82,
+        "best_fitness": 0.947,
+        "final_features": 460
+    }
+}
