@@ -48,6 +48,8 @@ streamlit run app.py
 | [**Lab 04**](lab%204/) | **Boundary Optimization & Canny Thresholding** | 8-Method Comparative Extraction, Morphological Contours | `Stage Visualizations`, `Benchmark CSVs` | Completed |
 | [**Lab 05**](Lab5/) | **Industrial Anomaly & Defect Inspection** | Statistical Texture Analysis, Logistic Regression, Streamlit App | `inspection_model.joblib`, `Interactive UI` | Completed |
 | [**Lab 06**](lab%206/) | **SIFT Landmark Recognition & Homography Studio** | Scale-Space DoG, Lowe's Ratio Test, RANSAC Homography, Streamlit Studio | `Streamlit App`, `Docker`, `Telemetry Dashboard` | 🌟 **Flagship** |
+| [**Lab 07**](lab%207/) | **GA Feature Selection for HOG Medical Classification** | Genetic Algorithms, HOG Optimization, DermaMNIST, SVM Classification | `Evolution Curves`, `Radar Analytics` | Completed |
+| [**LAB_MID**](LAB_MID/) | **HOG vs SIFT vs ResNet-50 Blood Cell Classification** | Classical vs Deep Vision, BloodMNIST, In-Plane Rotation, Noise Bootstrap, Occlusion Maps | `Interactive Dashboard`, `Visual Gallery` | Completed |
 
 ---
 
@@ -101,6 +103,13 @@ computer_vi/
 │   ├── README.md                 # Lab 6 comprehensive documentation
 │   ├── requirements.txt          # Production dependencies
 │   └── run_lab06.py              # CLI benchmark suite
+├── lab 7/                        # Lab 7: GA-Optimized HOG Medical Image Classification
+├── LAB_MID/                      # Lab Mid Exam: HOG vs SIFT vs ResNet-50 on BloodMNIST
+│   ├── figures/                  # 28 High-resolution benchmark figures
+│   ├── tables/                   # Raw CSV benchmark telemetry
+│   ├── dashboard.html            # Interactive Browser Diagnostics Dashboard
+│   ├── FA23_BAI_039_Muhammad_Asad_Mashood_LabMid(cv).ipynb # Primary executed notebook
+│   └── README.md                 # Comprehensive midterm comparative study
 └── README.md                     # Central portfolio showcase
 ```
 

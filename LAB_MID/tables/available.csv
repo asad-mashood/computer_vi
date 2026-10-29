@@ -1,0 +1,5 @@
+,train,val,test
+eosinophil,2181,312,624
+monocyte,993,143,284
+neutrophil,2330,333,666
+platelet,1643,235,470
