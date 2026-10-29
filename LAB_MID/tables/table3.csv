@@ -1,0 +1,4 @@
+Model,Clean accuracy,Rotated accuracy,Noisy accuracy
+HOG + SVM,70.0,70.83,53.33
+SIFT + SVM,78.33,78.33,78.33
+ResNet-50 + SVM (bonus),93.33,93.33,80.83

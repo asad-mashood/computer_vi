@@ -1,0 +1,13 @@
+numpy
+pandas
+matplotlib
+opencv-python
+scikit-image
+scikit-learn
+medmnist
+torch
+torchvision
+plotly
+ipywidgets
+jupyter
+nbconvert
