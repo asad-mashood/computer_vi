@@ -53,6 +53,14 @@ streamlit run app.py
 
 ---
 
+## 🔬 Research
+
+| Paper | Focus | Status |
+| :--- | :--- | :---: |
+| [**KilnPulse**](research/kilnpulse/) | Monitoring whether individual brick kilns are running, using Sentinel-1, Sentinel-2 and Landsat with a Random Forest and a hidden Markov model | Work in progress |
+
+---
+
 ## ⚡ Quickstart & Local Installation
 
 ### Prerequisites
@@ -104,6 +112,7 @@ computer_vi/
 │   ├── requirements.txt          # Production dependencies
 │   └── run_lab06.py              # CLI benchmark suite
 ├── lab 7/                        # Lab 7: GA-Optimized HOG Medical Image Classification
+├── research/kilnpulse/           # KilnPulse: brick kiln activity monitoring (paper draft)
 ├── LAB_MID/                      # Lab Mid Exam: HOG vs SIFT vs ResNet-50 on BloodMNIST
 │   ├── figures/                  # 28 High-resolution benchmark figures
 │   ├── tables/                   # Raw CSV benchmark telemetry
