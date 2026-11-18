@@ -50,6 +50,7 @@ streamlit run app.py
 | [**Lab 06**](lab%206/) | **SIFT Landmark Recognition & Homography Studio** | Scale-Space DoG, Lowe's Ratio Test, RANSAC Homography, Streamlit Studio | `Streamlit App`, `Docker`, `Telemetry Dashboard` | 🌟 **Flagship** |
 | [**Lab 07**](lab%207/) | **GA Feature Selection for HOG Medical Classification** | Genetic Algorithms, HOG Optimization, DermaMNIST, SVM Classification | `Evolution Curves`, `Radar Analytics` | Completed |
 | [**LAB_MID**](LAB_MID/) | **HOG vs SIFT vs ResNet-50 Blood Cell Classification** | Classical vs Deep Vision, BloodMNIST, In-Plane Rotation, Noise Bootstrap, Occlusion Maps | `Interactive Dashboard`, `Visual Gallery` | Completed |
+| [**6_algorithm_comparison**](6_algorithm_comparison/) | **Comparative ML Regression (6 Algorithms)** | Linear Regression, Decision Tree, Random Forest, MLP, XGBoost, KNN | `Interactive Web App`, `Handwritten Math`, `Models`, `Report` | Completed |
 
 ---
 
@@ -119,6 +120,14 @@ computer_vi/
 │   ├── dashboard.html            # Interactive Browser Diagnostics Dashboard
 │   ├── FA23_BAI_039_Muhammad_Asad_Mashood_LabMid(cv).ipynb # Primary executed notebook
 │   └── README.md                 # Comprehensive midterm comparative study
+├── 6_algorithm_comparison/       # Comparative Study of 6 ML Regression Algorithms
+│   ├── index.html                # Interactive In-Browser Model Playground (Bonus)
+│   ├── app.py                    # Streamlit Interactive Deployment App (Bonus)
+│   ├── HANDWRITTEN_DERIVATIONS.md# Step-by-step mathematical proofs & numerical calculations
+│   ├── REPORT.md / REPORT.pdf    # Executive Academic Comparative Report (18 Figures)
+│   ├── models/*.joblib           # 6 Serialized Trained Models (Preprocessors included)
+│   ├── regression_comparison.ipynb # Executed Research Notebook Walkthrough
+│   └── README.md                 # Project Overview & Comparative Benchmark Table
 └── README.md                     # Central portfolio showcase
 ```
 
