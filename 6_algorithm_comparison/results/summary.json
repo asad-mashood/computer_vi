@@ -16,13 +16,11 @@
     {
       "Model": "Linear Regression",
       "MAE": 49645.492445,
-      "MSE": 4778547424.025955,
+      "MSE": 4778547424.025956,
       "RMSE": 69127.038299,
       "R2": 0.635339,
       "Train R2": 0.65822,
-      "Train time (s)": 0.046015,
-      "CV RMSE (mean)": 67858.778522,
-      "CV RMSE (std)": 1312.172288,
+      "Train time (s)": 0.091755,
       "Rank (RMSE)": 6
     },
     {
@@ -32,9 +30,7 @@
       "RMSE": 59305.532544,
       "R2": 0.731599,
       "Train R2": 0.847018,
-      "Train time (s)": 0.122259,
-      "CV RMSE (mean)": 59066.474865,
-      "CV RMSE (std)": 1027.644455,
+      "Train time (s)": 0.169925,
       "Rank (RMSE)": 4
     },
     {
@@ -44,33 +40,27 @@
       "RMSE": 48738.981522,
       "R2": 0.818722,
       "Train R2": 0.940153,
-      "Train time (s)": 3.23513,
-      "CV RMSE (mean)": 49430.64455,
-      "CV RMSE (std)": 1042.06738,
+      "Train time (s)": 2.049184,
       "Rank (RMSE)": 2
     },
     {
       "Model": "Neural Network",
       "MAE": 34738.839474,
-      "MSE": 2679186512.875828,
+      "MSE": 2679186512.875836,
       "RMSE": 51760.858889,
       "R2": 0.795546,
       "Train R2": 0.863035,
-      "Train time (s)": 10.550479,
-      "CV RMSE (mean)": 52357.65857,
-      "CV RMSE (std)": 1142.291172,
+      "Train time (s)": 23.275354,
       "Rank (RMSE)": 3
     },
     {
       "Model": "XGBoost",
-      "MAE": 28009.265274,
-      "MSE": 1868654925.123397,
-      "RMSE": 43227.941486,
-      "R2": 0.857399,
-      "Train R2": 0.980615,
-      "Train time (s)": 1.565428,
-      "CV RMSE (mean)": 44669.464713,
-      "CV RMSE (std)": 779.957226,
+      "MAE": 28040.629321,
+      "MSE": 1900592191.905474,
+      "RMSE": 43595.781813,
+      "R2": 0.854962,
+      "Train R2": 0.980709,
+      "Train time (s)": 2.980347,
       "Rank (RMSE)": 1
     },
     {
@@ -80,9 +70,7 @@
       "RMSE": 60502.150177,
       "R2": 0.720659,
       "Train R2": 1.0,
-      "Train time (s)": 0.015858,
-      "CV RMSE (mean)": 60387.859148,
-      "CV RMSE (std)": 1077.472413,
+      "Train time (s)": 0.030932,
       "Rank (RMSE)": 5
     }
   ]

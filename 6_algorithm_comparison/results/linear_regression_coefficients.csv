@@ -1,17 +1,17 @@
 ,coefficient
-longitude,-56276.05885186386
-latitude,-56638.231158908755
-housing_median_age,14122.304751979302
-total_rooms,5881.104980269967
-total_bedrooms,5307.662996776233
-population,-46320.2854705571
-households,40233.72484825169
-median_income,78904.43939684203
-rooms_per_household,7699.4484883815685
-bedrooms_per_room,16809.104551355573
-population_per_household,750.367942904884
-ocean_proximity_<1H OCEAN,-18666.478553309444
-ocean_proximity_INLAND,-53617.84037611896
-ocean_proximity_ISLAND,112060.24445190391
-ocean_proximity_NEAR BAY,-24109.185131669674
-ocean_proximity_NEAR OCEAN,-15666.74039080592
+longitude,-56276.05885186364
+latitude,-56638.23115890874
+housing_median_age,14122.304751979369
+total_rooms,5881.104980269774
+total_bedrooms,5307.662996776435
+population,-46320.28547055712
+households,40233.72484825173
+median_income,78904.43939684206
+rooms_per_household,7699.448488381586
+bedrooms_per_room,16809.104551355485
+population_per_household,750.3679429048788
+ocean_proximity_<1H OCEAN,-18666.478553309476
+ocean_proximity_INLAND,-53617.84037611879
+ocean_proximity_ISLAND,112060.24445190383
+ocean_proximity_NEAR BAY,-24109.185131669634
+ocean_proximity_NEAR OCEAN,-15666.740390805931
