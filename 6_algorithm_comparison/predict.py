@@ -5,14 +5,20 @@ Load a trained model from models/ and predict the price of new districts.
     python predict.py --model xgboost       # one model only
 """
 import argparse
+import sys
 from pathlib import Path
+
+# Ensure local src/ package is discoverable from any CWD
+DIR = Path(__file__).resolve().parent
+if str(DIR) not in sys.path:
+    sys.path.insert(0, str(DIR))
 
 import joblib
 import pandas as pd
 
 from src.data_preprocessing import FEATURES, add_features
 
-MODELS_DIR = Path(__file__).resolve().parent / "models"
+MODELS_DIR = DIR / "models"
 
 EXAMPLES = pd.DataFrame([
     # coastal Bay Area, high income
@@ -35,7 +41,10 @@ def main(model_name=None):
     paths = [MODELS_DIR / f"{model_name}.joblib"] if model_name else sorted(MODELS_DIR.glob("*.joblib"))
     out = EXAMPLES[["median_income", "ocean_proximity"]].copy()
     for p in paths:
-        out[p.stem] = joblib.load(p).predict(X).round(0)
+        try:
+            out[p.stem] = joblib.load(p).predict(X).round(0)
+        except Exception as e:
+            out[p.stem] = f"Error: {e}"
     pd.set_option("display.width", 200)
     print(out.to_string())
 
