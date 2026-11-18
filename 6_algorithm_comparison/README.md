@@ -6,7 +6,7 @@
 [![XGBoost](https://img.shields.io/badge/XGBoost-1.7+-red.svg)](https://xgboost.ai/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Streamlit App](https://img.shields.io/badge/Interactive%20App-Streamlit-FF4B4B.svg)](app.py)
-[![Web Demo](https://img.shields.io/badge/Live%20Web%20App-HTML5%2FJS-blueviolet.svg)](index.html)
+[![Live Web Demo](https://img.shields.io/badge/Live%20Web%20App-asad--mashood.github.io-success.svg)](https://asad-mashood.github.io/ml-regression-comparison/)
 
 **Course Assignment:** Comparative Implementation of Machine Learning Regression Algorithms (Handwritten + Programming)  
 **Student:** Muhammad Asad Mashood — BS Artificial Intelligence, COMSATS University Islamabad (Wah Campus)  
@@ -24,7 +24,7 @@ This repository satisfies and exceeds all core requirements and bonus criteria s
 |:---|:---|:---|
 | ✍️ **1. Handwritten Implementation** | [`HANDWRITTEN_DERIVATIONS.md`](HANDWRITTEN_DERIVATIONS.md) | Complete step-by-step mathematical proofs, loss equations, and manual numeric calculations on a 3-district sample |
 | 💻 **2. Python Programming Implementation** | [`train.py`](train.py) · [`regression_comparison.ipynb`](regression_comparison.ipynb) | End-to-end fair implementation on all 20,640 rows, 80:20 split, leak-free preprocessing, metrics & figures |
-| 🌐 **3. Interactive Web App (Bonus)** | [`index.html`](index.html) | Standalone client-side web application with real-time prediction sliders for all 6 models |
+| 🌐 **3. Interactive Web App (Bonus)** | [**Live Online Demo**](https://asad-mashood.github.io/ml-regression-comparison/) · [`index.html`](index.html) | Standalone client-side web application with real-time prediction sliders for all 6 models |
 | 🚀 **4. Streamlit Cloud Deployable (Bonus)** | [`app.py`](app.py) | Full interactive Streamlit dashboard (`streamlit run app.py`) |
 | 📄 **5. Executive Academic Report** | [`REPORT.md`](REPORT.md) · [`REPORT.pdf`](REPORT.pdf) | 17-page illustrated report with 18 high-resolution diagnostic figures and error analysis |
 
