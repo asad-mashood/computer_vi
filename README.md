@@ -50,7 +50,7 @@ streamlit run app.py
 | [**Lab 06**](lab%206/) | **SIFT Landmark Recognition & Homography Studio** | Scale-Space DoG, Lowe's Ratio Test, RANSAC Homography, Streamlit Studio | `Streamlit App`, `Docker`, `Telemetry Dashboard` | 🌟 **Flagship** |
 | [**Lab 07**](lab%207/) | **GA Feature Selection for HOG Medical Classification** | Genetic Algorithms, HOG Optimization, DermaMNIST, SVM Classification | `Evolution Curves`, `Radar Analytics` | Completed |
 | [**LAB_MID**](LAB_MID/) | **HOG vs SIFT vs ResNet-50 Blood Cell Classification** | Classical vs Deep Vision, BloodMNIST, In-Plane Rotation, Noise Bootstrap, Occlusion Maps | `Interactive Dashboard`, `Visual Gallery` | Completed |
-| [**6_algorithm_comparison**](6_algorithm_comparison/) | **Comparative ML Regression (6 Algorithms)** | Linear Regression, Decision Tree, Random Forest, MLP, XGBoost, KNN | `Interactive Web App`, `Handwritten Math`, `Models`, `Report` | Completed |
+| [**6_algorithm_comparison**](6_algorithm_comparison/) | **Comparative ML Regression (6 Algorithms) — Dual Market (PKR & USD)** | Linear Regression, Decision Tree, Random Forest, MLP, XGBoost, KNN | `Interactive Web App`, `Pakistan & California Live Demos`, `Handwritten Math`, `Models`, `Report` | Completed |
 
 ---
 
@@ -121,13 +121,20 @@ computer_vi/
 │   ├── FA23_BAI_039_Muhammad_Asad_Mashood_LabMid(cv).ipynb # Primary executed notebook
 │   └── README.md                 # Comprehensive midterm comparative study
 ├── 6_algorithm_comparison/       # Comparative Study of 6 ML Regression Algorithms
-│   ├── index.html                # Interactive In-Browser Model Playground (Bonus)
-│   ├── app.py                    # Streamlit Interactive Deployment App (Bonus)
-│   ├── HANDWRITTEN_DERIVATIONS.md# Step-by-step mathematical proofs & numerical calculations
-│   ├── REPORT.md / REPORT.pdf    # Executive Academic Comparative Report (18 Figures)
-│   ├── models/*.joblib           # 6 Serialized Trained Models (Preprocessors included)
-│   ├── regression_comparison.ipynb # Executed Research Notebook Walkthrough
-│   └── README.md                 # Project Overview & Comparative Benchmark Table
+│   ├── index.html                # Master Cross-Market In-Browser App (Pakistan + California)
+│   ├── pakistan.html             # Dedicated Standalone Pakistan Real Estate Predictor (PKR)
+│   ├── california.html           # Dedicated Standalone California Housing Benchmark (USD)
+│   ├── app.py                    # Master Streamlit App with Market Switcher
+│   ├── predict.py                # Master CLI Multi-Dataset Inference Engine
+│   ├── README.md & REPORT.md     # Cross-market benchmark analysis & academic report
+│   ├── pakistan/                 # Complete Pakistan Real Estate project (Zameen.com)
+│   │   ├── models/*.joblib       # 6 Trained models (XGBoost, RF, MLP, DT, KNN, LR)
+│   │   ├── handwritten/          # 10 Lahore houses step-by-step mathematical proof & PDF
+│   │   └── results/figures/      # 22 High-resolution evaluation plots
+│   └── california/               # Complete California Housing benchmark project
+│       ├── models/*.joblib       # 6 Trained models
+│       ├── handwritten/          # 3 District step-by-step mathematical proof & PDF
+│       └── results/figures/      # 18 High-resolution evaluation plots
 └── README.md                     # Central portfolio showcase
 ```
 

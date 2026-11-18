@@ -1,56 +1,54 @@
 """
-Load a trained model from models/ and predict the price of new districts.
+Master CLI Prediction Script for Both Regression Datasets:
+  - Pakistan Real Estate (Zameen.com) in PKR
+  - California Housing Benchmark in USD
 
-    python predict.py                       # predict 3 example districts with all six models
-    python predict.py --model xgboost       # one model only
+Usage:
+    python predict.py                    # runs inference on both datasets
+    python predict.py --dataset pakistan  # runs only on Pakistan dataset
+    python predict.py --dataset california # runs only on California dataset
 """
 import argparse
+import subprocess
 import sys
 from pathlib import Path
 
-# Ensure local src/ package is discoverable from any CWD
-DIR = Path(__file__).resolve().parent
-if str(DIR) not in sys.path:
-    sys.path.insert(0, str(DIR))
-
-import joblib
-import pandas as pd
-
-from src.data_preprocessing import FEATURES, add_features
-
-MODELS_DIR = DIR / "models"
-
-EXAMPLES = pd.DataFrame([
-    # coastal Bay Area, high income
-    dict(longitude=-122.25, latitude=37.85, housing_median_age=30, total_rooms=2500,
-         total_bedrooms=450, population=1100, households=420, median_income=7.5,
-         ocean_proximity="NEAR BAY"),
-    # inland, modest income
-    dict(longitude=-119.80, latitude=36.75, housing_median_age=25, total_rooms=2200,
-         total_bedrooms=430, population=1300, households=400, median_income=2.8,
-         ocean_proximity="INLAND"),
-    # LA area, average income
-    dict(longitude=-118.30, latitude=34.05, housing_median_age=35, total_rooms=1800,
-         total_bedrooms=420, population=1200, households=390, median_income=3.9,
-         ocean_proximity="<1H OCEAN"),
-])
+ROOT = Path(__file__).resolve().parent
 
 
-def main(model_name=None):
-    X = add_features(EXAMPLES)[FEATURES]
-    paths = [MODELS_DIR / f"{model_name}.joblib"] if model_name else sorted(MODELS_DIR.glob("*.joblib"))
-    out = EXAMPLES[["median_income", "ocean_proximity"]].copy()
-    for p in paths:
-        try:
-            out[p.stem] = joblib.load(p).predict(X).round(0)
-        except Exception as e:
-            out[p.stem] = f"Error: {e}"
-    pd.set_option("display.width", 200)
-    print(out.to_string())
+def run_pakistan(model_name=None):
+    print("=" * 80)
+    print(" 🇵🇰 PAKISTAN REAL ESTATE (ZAMEEN.COM) - 6 ALGORITHM PREDICTIONS (PKR)")
+    print("=" * 80)
+    cmd = [sys.executable, str(ROOT / "pakistan" / "predict.py")]
+    if model_name:
+        cmd.extend(["--model", model_name])
+    subprocess.run(cmd, check=True, cwd=str(ROOT / "pakistan"))
+
+
+def run_california(model_name=None):
+    print("\n" + "=" * 80)
+    print(" 🇺🇸 CALIFORNIA HOUSING BENCHMARK - 6 ALGORITHM PREDICTIONS (USD)")
+    print("=" * 80)
+    cmd = [sys.executable, str(ROOT / "california" / "predict.py")]
+    if model_name:
+        cmd.extend(["--model", model_name])
+    subprocess.run(cmd, check=True, cwd=str(ROOT / "california"))
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Multi-dataset 6-algorithm regression predictor")
+    parser.add_argument("--dataset", choices=["both", "pakistan", "california"], default="both",
+                        help="Which dataset to run predictions on")
+    parser.add_argument("--model", type=str, default=None,
+                        help="Optional specific model filter (e.g. xgboost, random_forest)")
+    args = parser.parse_args()
+
+    if args.dataset in ["both", "pakistan"]:
+        run_pakistan(args.model)
+    if args.dataset in ["both", "california"]:
+        run_california(args.model)
 
 
 if __name__ == "__main__":
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--model", choices=["linear_regression", "decision_tree", "random_forest",
-                                        "neural_network", "xgboost", "knn"])
-    main(ap.parse_args().model)
+    main()

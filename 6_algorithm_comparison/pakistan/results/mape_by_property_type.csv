@@ -1,0 +1,7 @@
+,Test rows,Linear Regression,Decision Tree,Random Forest,Neural Network,XGBoost,KNN
+House,9061,25.31,20.50,18.96,20.43,17.26,20.72
+Flat,2980,31.20,25.64,23.79,24.18,20.83,23.88
+Upper Portion,278,23.51,27.94,24.29,23.25,18.87,23.73
+Lower Portion,104,22.25,31.89,28.94,22.27,18.81,28.56
+Penthouse,38,36.68,58.90,39.15,29.97,29.84,44.20
+Farm House,15,57.46,52.79,56.68,51.11,52.39,105.97

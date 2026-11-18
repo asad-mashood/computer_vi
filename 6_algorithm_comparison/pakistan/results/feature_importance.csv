@@ -1,0 +1,22 @@
+,Random Forest,XGBoost
+area_marla,0.31688,0.29184
+bedrooms,0.04275,0.02445
+baths,0.07607,0.06327
+latitude,0.02824,0.01521
+longitude,0.02175,0.01335
+log_area_marla,0.27736,0.29489
+marla_per_bedroom,0.04122,0.00465
+baths_per_bedroom,0.00224,0.00342
+total_rooms,0.08355,0.03478
+distance_to_centre_km,0.01389,0.00967
+listed_by_agency,0.00147,0.00418
+property_type_Farm House,0.00002,0.01689
+property_type_Flat,0.00425,0.03356
+property_type_Lower Portion,0.00047,0.02352
+property_type_Penthouse,0.00024,0.02160
+property_type_Upper Portion,0.00098,0.02993
+city_Faisalabad,0.00020,0.00778
+city_Islamabad,0.00100,0.01194
+city_Lahore,0.00218,0.02687
+city_Rawalpindi,0.00124,0.03681
+city_location,0.08399,0.03140

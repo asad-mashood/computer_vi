@@ -1,0 +1,9 @@
+step,rows
+Raw listings (sale + rent),168446
+"Keep 'For Sale' only (rent prices are monthly, a different target)",120655
+Keep residential types (drop single 'Room' listings),120630
+Remove duplicate listings (same property posted again),82307
+Bedrooms and baths between 1 and 12 (0 = not filled in),63766
+"Area between 1 marla and 10 kanal, price > 0",63642
+GPS coordinates inside the listed city,63625
+Remove extreme price-per-marla (1st / 99th percentile per city),62379
