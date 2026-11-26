@@ -49,6 +49,7 @@ streamlit run app.py
 | [**Lab 05**](Lab5/) | **Industrial Anomaly & Defect Inspection** | Statistical Texture Analysis, Logistic Regression, Streamlit App | `inspection_model.joblib`, `Interactive UI` | Completed |
 | [**Lab 06**](lab%206/) | **SIFT Landmark Recognition & Homography Studio** | Scale-Space DoG, Lowe's Ratio Test, RANSAC Homography, Streamlit Studio | `Streamlit App`, `Docker`, `Telemetry Dashboard` | 🌟 **Flagship** |
 | [**Lab 07**](lab%207/) | **GA Feature Selection for HOG Medical Classification** | Genetic Algorithms, HOG Optimization, DermaMNIST, SVM Classification | `Evolution Curves`, `Radar Analytics` | Completed |
+| [**Lab 12**](lab%2012/) | **CNN Feature Visualization & Parameter Audit** | From-Scratch Conv Pipeline, ReLU Blackout Analysis, Receptive Fields, Filter Redundancy | `12 Benchmark Figures`, `Keras & PyTorch Audits`, `Viva Defense` | Completed |
 | [**LAB_MID**](LAB_MID/) | **HOG vs SIFT vs ResNet-50 Blood Cell Classification** | Classical vs Deep Vision, BloodMNIST, In-Plane Rotation, Noise Bootstrap, Occlusion Maps | `Interactive Dashboard`, `Visual Gallery` | Completed |
 | [**6_algorithm_comparison**](6_algorithm_comparison/) | **Comparative ML Regression (6 Algorithms) — Dual Market (PKR & USD)** | Linear Regression, Decision Tree, Random Forest, MLP, XGBoost, KNN | `Interactive Web App`, `Pakistan & California Live Demos`, `Handwritten Math`, `Models`, `Report` | Completed |
 
@@ -120,6 +121,10 @@ computer_vi/
 │   ├── dashboard.html            # Interactive Browser Diagnostics Dashboard
 │   ├── FA23_BAI_039_Muhammad_Asad_Mashood_LabMid(cv).ipynb # Primary executed notebook
 │   └── README.md                 # Comprehensive midterm comparative study
+├── lab 12/                     # Lab 12: CNN Feature Visualization & Parameter Audit
+│   ├── CNN_Visualization_Lab_FA23-BAI-039.ipynb # Primary executed notebook
+│   ├── figures/                  # 12 High-resolution diagnostic figures
+│   └── README.md                 # Complete report, audit tables & viva cheat-sheet
 ├── 6_algorithm_comparison/       # Comparative Study of 6 ML Regression Algorithms
 │   ├── index.html                # Master Cross-Market In-Browser App (Pakistan + California)
 │   ├── pakistan.html             # Dedicated Standalone Pakistan Real Estate Predictor (PKR)
